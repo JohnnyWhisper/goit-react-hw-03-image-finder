@@ -1,5 +1,4 @@
-import { Component } from 'react';
-import { toast } from 'react-toastify';
+
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
 import styles from './ImageGallery.module.css';
 import '../../services/pixabay';

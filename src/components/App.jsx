@@ -4,13 +4,13 @@ import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import fetchImagesApi from './services/pixabay';
-import Container from './components/Container/Container.js';
-import Searchbar from './components/Searchbar/Searchbar.js';
-import ImageGallery from './components/ImageGallery/ImageGallery.js';
-import Button from './components/Button/Button.js';
-import LoaderSpinner from './components/Loader/Loader.js';
-import Modal from './components/Modal/Modal.js';
+import fetchImagesApi from '../services/pixabay';
+import Container from './Container';
+import Searchbar from './Searchbar';
+import ImageGallery from './ImageGallery';
+import Button from './Button';
+import LoaderSpinner from './Loader';
+import Modal from './Modal';
 
 const Status = {
   IDLE: 'idle',
