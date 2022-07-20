@@ -1,4 +1,5 @@
 import styles from './Button.module.css';
+import PropTypes from 'prop-types';
 
 const Button = ({ onClickLoadMore }) => {
   return (
@@ -10,6 +11,11 @@ const Button = ({ onClickLoadMore }) => {
       Load more
     </button>
   );
+};
+
+
+Button.propTypes = {
+  onClickLoadMore: PropTypes.func.isRequired,
 };
 
 export default Button;

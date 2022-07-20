@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { BsSearch } from 'react-icons/bs';
-
+import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import styles from './Searchbar.module.css';
 
@@ -47,5 +47,9 @@ class Searchbar extends Component {
     );
   }
 }
+
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default Searchbar;

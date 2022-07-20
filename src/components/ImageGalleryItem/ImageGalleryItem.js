@@ -18,6 +18,9 @@ ImageGalleryItem.propTypes = {
   imagesUrl: PropTypes.string.isRequired,
   imagesAlt: PropTypes.string.isRequired,
   imageId: PropTypes.number.isRequired,
+  onClick:PropTypes.func.isRequired,
 };
+
+
 
 export default ImageGalleryItem;

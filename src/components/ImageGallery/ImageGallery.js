@@ -1,5 +1,6 @@
 
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
+import PropTypes from 'prop-types';
 import styles from './ImageGallery.module.css';
 import '../../services/pixabay';
 const ImageGallery = ({ images, onOpenModal }) => {
@@ -20,4 +21,15 @@ const ImageGallery = ({ images, onOpenModal }) => {
   );
 };
 
+ImageGallery.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      imagesUrl: PropTypes.string.isRequired,
+      imagesAlt:PropTypes.string.isRequired,
+      imageId: PropTypes.string.isRequired,
+    })
+    ),
+    onOpenModal:PropTypes.func.isRequired,
+
+};
 export default ImageGallery;
