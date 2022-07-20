@@ -18,6 +18,7 @@ const  fetchImagesApi = async (searchQuery, page) => {
   fetchImagesApi.propTypes = {
     searchQuery: PropTypes.string.isRequired,
     page: PropTypes.number.isRequired,
+   
   };
   
   export default fetchImagesApi;

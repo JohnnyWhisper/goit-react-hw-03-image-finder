@@ -53,6 +53,7 @@ class App extends Component {
                 }
               : { imagesArray: images.hits, status: Status.RESOLVED }
           );
+
         })
         .catch(error => {
           this.setState({ error, status: Status.REJECTED });
